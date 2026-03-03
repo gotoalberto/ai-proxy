@@ -1,0 +1,17 @@
+{
+  "agents": [
+    {
+      "id": "agent-001",
+      "name": "example-agent",
+      "services": [
+        "anthropic",
+        "openai",
+        "elevenlabs",
+        "aws-s3",
+        "aws-dynamodb"
+      ],
+      "apiKeySecretName": "ai-proxy/agents/agent-001/api-keys",
+      "description": "Example agent with access to AI and AWS services"
+    }
+  ]
+}

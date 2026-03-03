@@ -1,0 +1,47 @@
+{
+  "services": [
+    {
+      "slug": "anthropic",
+      "name": "Anthropic Claude",
+      "targetBaseUrl": "https://api.anthropic.com",
+      "authType": "header",
+      "authHeader": "x-api-key",
+      "secretName": "ai-proxy/services/anthropic",
+      "description": "Anthropic Claude AI API"
+    },
+    {
+      "slug": "openai",
+      "name": "OpenAI",
+      "targetBaseUrl": "https://api.openai.com",
+      "authType": "bearer",
+      "authHeader": "Authorization",
+      "secretName": "ai-proxy/services/openai",
+      "description": "OpenAI GPT API"
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs",
+      "targetBaseUrl": "https://api.elevenlabs.io/v1",
+      "authType": "header",
+      "authHeader": "xi-api-key",
+      "secretName": "ai-proxy/services/elevenlabs",
+      "description": "ElevenLabs Text-to-Speech API"
+    },
+    {
+      "slug": "aws-s3",
+      "name": "AWS S3",
+      "targetBaseUrl": "https://s3.us-east-1.amazonaws.com",
+      "authType": "aws-sigv4",
+      "secretName": "ai-proxy/services/aws",
+      "description": "AWS S3 Storage Service"
+    },
+    {
+      "slug": "aws-dynamodb",
+      "name": "AWS DynamoDB",
+      "targetBaseUrl": "https://dynamodb.us-east-1.amazonaws.com",
+      "authType": "aws-sigv4",
+      "secretName": "ai-proxy/services/aws",
+      "description": "AWS DynamoDB NoSQL Database"
+    }
+  ]
+}

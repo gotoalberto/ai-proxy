@@ -1,0 +1,41 @@
+{
+  "name": "ai-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Universal API Gateway for AI and Cloud Services with AWS Secrets Manager",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "service:create": "tsx scripts/create-service.ts",
+    "service:list": "tsx scripts/list-services.ts",
+    "agent:create": "tsx scripts/create-agent.ts",
+    "agent:list": "tsx scripts/list-agents.ts",
+    "apikey:create": "tsx scripts/create-api-key.ts",
+    "test:config": "tsx scripts/test-config.ts",
+    "migrate": "tsx scripts/migrate-from-agentic-apis.ts"
+  },
+  "dependencies": {
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@aws-sdk/client-secrets-manager": "^3.709.0",
+    "@smithy/signature-v4": "^5.3.10",
+    "@smithy/protocol-http": "^5.3.10",
+    "@aws-crypto/sha256-js": "^5.2.0",
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5",
+    "eslint": "^9",
+    "eslint-config-next": "^15.1.6",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8",
+    "autoprefixer": "^10.4.20",
+    "tsx": "^4.19.2"
+  }
+}
